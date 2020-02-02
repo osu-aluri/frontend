@@ -116,7 +116,7 @@
 								</a>
 							{{ end }}
 							{{ if hasAdmin $global.Context.User.Privileges }}
-								<a href="https://old.yozora.pw/index.php?p=103&id={{ $global.UserID }}"
+								<a href="https://old.aluri.pw/index.php?p=103&id={{ $global.UserID }}"
 									target="_blank" title="Quick edit" class="ui circular mini blue icon button">
 									<i class="folder open outline icon"></i>
 								</a>
@@ -168,7 +168,7 @@
 								{{ $global.T "<b>%s</b> is a player from <b>%s</b>." .username (country .country true) | html }}
 							{{ end }}
 
-							<br>{{ $global.T "They signed up on Yozora %s." (time $user.registered_on) | html }}
+							<br>{{ $global.T "They signed up on Aluri %s." (time $user.registered_on) | html }}
 							<br>{{ $global.T "Last seen: %s." (time $user.latest_activity) | html }}
 							<br>{{ with playstyle .play_style $global }}{{ $global.T "They play with %s." . }}{{ end }}
 						</div>
